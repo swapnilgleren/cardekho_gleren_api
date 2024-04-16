@@ -1,0 +1,33 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Typescript training",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "dev": "nodemon --watch \"src/**/*.ts\" --exec \"npx tsc && node ./dist/index.js\""
+  },
+  "author": "Moose Dev",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^20.10.3",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "@types/puppeteer": "^7.0.4",
+    "@upstash/redis": "^1.25.1",
+    "axios": "^1.6.2",
+    "cheerio": "^1.0.0-rc.12",
+    "chromadb": "^1.7.1",
+    "dotenv": "^16.3.1",
+    "faiss-node": "^0.5.1",
+    "fs": "^0.0.1-security",
+    "langchain": "^0.0.200",
+    "pdf-parse": "^1.1.1",
+    "pdfjs-dist": "^4.0.269",
+    "puppeteer": "^19.11.1"
+  }
+}
